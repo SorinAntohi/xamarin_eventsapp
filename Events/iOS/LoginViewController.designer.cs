@@ -1,0 +1,49 @@
+// WARNING
+//
+// This file has been generated automatically by Xamarin Studio from the outlets and
+// actions declared in your storyboard file.
+// Manual changes to this file will not be maintained.
+//
+using Foundation;
+using System;
+using System.CodeDom.Compiler;
+using UIKit;
+
+namespace Events.iOS
+{
+	[Register ("LoginViewController")]
+	partial class LoginViewController
+	{
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UITextField EmailTextField { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UIButton LoginButton { get; set; }
+
+		[Outlet]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		UITextField NameTextField { get; set; }
+
+		[Action ("LoginButton_TouchUpInside:")]
+		[GeneratedCode ("iOS Designer", "1.0")]
+		partial void LoginButton_TouchUpInside (UIButton sender);
+
+		void ReleaseDesignerOutlets ()
+		{
+			if (EmailTextField != null) {
+				EmailTextField.Dispose ();
+				EmailTextField = null;
+			}
+			if (LoginButton != null) {
+				LoginButton.Dispose ();
+				LoginButton = null;
+			}
+			if (NameTextField != null) {
+				NameTextField.Dispose ();
+				NameTextField = null;
+			}
+		}
+	}
+}
